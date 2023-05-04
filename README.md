@@ -1,27 +1,32 @@
-# ProjectInfoblogWebAngular
+# 🔍 Project Infoblog Web Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+[![GitHub language count](https://img.shields.io/github/languages/count/nome-do-usuario/nome-do-repositorio)](https://github.com/nome-do-usuario/nome-do-repositorio)
+[![GitHub repo size](https://img.shields.io/github/repo-size/nome-do-usuario/nome-do-repositorio)](https://github.com/nome-do-usuario/nome-do-repositorio)
 
-## Development server
+Este projeto é um treino de estudo e formação do Angular Developer na DIO (Digital Innovation One). Aqui, aprendemos a utilizar o Angular CLI (Command Line Interface) para gerar componentes, serviços, diretivas, pipes, classes entre outras funcionalidades.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Como rodar o projeto
 
-## Code scaffolding
+Rode `ng serve` para iniciar o servidor localmente. Abra no seu navegador em `http://localhost:4200/`. A aplicação será atualizada automaticamente se houver alguma mudança nos arquivos fonte.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 👨‍💻 Gerando novos componentes
 
-## Build
+Rode `ng generate component nome-do-componente` para gerar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 💻 Testes unitários
 
-## Running unit tests
+Rode `ng test` para executar testes unitários via [Karma](https://karma-runner.github.io).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔎 Testes end-to-end
 
-## Running end-to-end tests
+Rode `ng e2e` para executar testes end-to-end através da plataforma que você escolher. Para usar esse comando, é necessário ter instalado uma biblioteca que implementa recursos de teste end-to-end.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🛠️ Build
 
-## Further help
+Rode `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ❔ Ajuda adicional
+
+Para obter mais ajuda sobre o Angular CLI, execute `ng help` ou vá para a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
+
+Espero que esta nova versão atenda às suas necessidades. Por favor, me avise se você precisar de mais alguma coisa!
