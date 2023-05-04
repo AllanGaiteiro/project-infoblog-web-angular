@@ -1,7 +1,7 @@
 # 🔍 Project Infoblog Web Angular
 
-[![GitHub language count](https://img.shields.io/github/languages/count/nome-do-usuario/nome-do-repositorio)](https://github.com/nome-do-usuario/nome-do-repositorio)
-[![GitHub repo size](https://img.shields.io/github/repo-size/nome-do-usuario/nome-do-repositorio)](https://github.com/nome-do-usuario/nome-do-repositorio)
+[![GitHub language count](https://img.shields.io/github/languages/count/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular)
+[![GitHub repo size](https://img.shields.io/github/repo-size/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular)
 
 Este projeto é um treino de estudo e formação do Angular Developer na DIO (Digital Innovation One). Aqui, aprendemos a utilizar o Angular CLI (Command Line Interface) para gerar componentes, serviços, diretivas, pipes, classes entre outras funcionalidades.
 
