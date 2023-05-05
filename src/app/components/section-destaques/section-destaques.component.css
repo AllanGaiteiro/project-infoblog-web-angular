@@ -1,0 +1,11 @@
+.section-destaque {
+  width: 1100px;
+  margin: auto;
+}
+.section-destaque h2 {
+  margin: 25px;
+}
+
+.content-destaque {
+  display: flex;
+}
