@@ -1,6 +1,6 @@
 # 🔍 Project Infoblog Web Angular
 
-[![GitHub language count](https://img.shields.io/github/languages/count/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular) [![GitHub repo size](https://img.shields.io/github/repo-size/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular) [![Acessar o Blog](https://img.shields.io/badge/-Pagina_Inicial-green?style=for-the-badge)](https://infoblog-web.web.app/)
+[![GitHub language count](https://img.shields.io/github/languages/count/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular) [![GitHub repo size](https://img.shields.io/github/repo-size/AllanGaiteiro/project-infoblog-web-angular)](https://github.com/AllanGaiteiro/project-infoblog-web-angular) [![Acessar o Blog](https://img.shields.io/badge/-Prototipo-orange?style=for-the-badge)](https://www.figma.com/proto/uVNDmPIPH1roUm7KXl5byy/Epictetus-%E2%80%93-Blog-UI-Design-(Community)?type=design&node-id=714-616&scaling=min-zoom&page-id=714%3A615&starting-point-node-id=714%3A135) [![Acessar o Blog](https://img.shields.io/badge/-Pagina_Inicial-green?style=for-the-badge)](https://infoblog-web.web.app/)
 
 Este projeto é um treino de estudo e formação do Angular Developer na DIO (Digital Innovation One). Aqui, aprendemos a utilizar o Angular CLI (Command Line Interface) para gerar componentes, serviços, diretivas, pipes, classes entre outras funcionalidades.
 
