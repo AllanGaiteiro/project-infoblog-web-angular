@@ -1,4 +1,7 @@
 <main>
   <app-section-destaques></app-section-destaques>
-  <app-setion-small-card-list></app-setion-small-card-list>
+  <div *ngIf="sections">
+    <app-setion-small-card-list *ngFor="let section of sections" [section]="section"></app-setion-small-card-list>
+  </div>
+
 </main>
