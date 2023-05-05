@@ -45,7 +45,8 @@ const routes: Routes = [
     NavigationComponent,
     CardComponent,
     CardListComponent,
-    PageHomeComponent
+    PageHomeComponent,
+    PageSearchComponent
   ],
   imports: [
     BrowserModule,
