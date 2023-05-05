@@ -1,7 +1,9 @@
 .menu {
+  height: 100%;
   list-style-type: none;
   display: flex;
   color: #ffffff;
+  align-items: center;
 }
 .menu li {
   font-family: "Patrick" Hand;
@@ -9,5 +11,4 @@
   font-weight: 400;
   letter-spacing: 0em;
   margin: auto 20px;
-  line-height: 35px;
 }

@@ -1,9 +1,11 @@
 .logo {
+  height: 100%;
   display: flex;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
+  align-items: center;
 }
 .logo p {
   background: #d9d9d9;
