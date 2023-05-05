@@ -7,6 +7,7 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { FooterBlogComponent } from './components/footer-blog/footer-blog.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SectionDestaquesComponent } from './components/section-destaques/section-destaques.component';
+import { SetionSmallCardListComponent } from './components/setion-small-card-list/setion-small-card-list.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { ButtonPostComponent } from './shared/button-post/button-post.component';
 import { CardComponent } from './shared/card/card.component';
@@ -21,6 +22,7 @@ import { SearchBarComponent } from './shared/search-bar/search-bar.component';
     SmallCardComponent,
     FooterBlogComponent,
     SectionDestaquesComponent,
+    SetionSmallCardListComponent,
     LogoComponent,
     MenuComponent,
     SearchBarComponent,
