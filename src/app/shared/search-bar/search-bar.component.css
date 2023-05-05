@@ -1,0 +1,22 @@
+.search-bar {
+  height: 40px;
+  width: 224px;
+  border-radius: 100px;
+  background: #c4c4c4;
+  margin: 15px 0px;
+  display: flex;
+}
+.search-bar img {
+  height: 10px;
+  width: 10px;
+  margin: 15px;
+}
+.search-bar p {
+  font-family: "Patrick" Hand;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111111;
+  margin: 10px;
+}
