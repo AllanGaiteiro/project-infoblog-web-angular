@@ -1,0 +1,37 @@
+.big-card {
+  height: 485px;
+  width: 482px;
+  margin: 25px;
+}
+
+.big-card-image {
+  height: 314px;
+  width: 482px;
+  border-radius: 20px;
+}
+
+.big-card-date {
+  font-family: "Inter";
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.big-card-title {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.big-card-description {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
