@@ -1,0 +1,12 @@
+nav {
+  height: 70px;
+  width: 1106px;
+  margin: auto;
+  border-radius: 0px;
+  background: #111111;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Patrick" Hand;
+  text-align: center;
+  color: #ffffff;
+}
