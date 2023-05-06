@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent {
-
+  id: string = 'id';
 }
