@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { RouterModule, Routes } from '@angular/router';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { CardListComponent } from './components/card-list/card-list.component';
@@ -50,7 +54,12 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideRemoteConfig(() => getRemoteConfig()),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
