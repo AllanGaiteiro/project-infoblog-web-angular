@@ -23,7 +23,7 @@ import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 
 const routes: Routes = [
   { path: '', component: PageHomeComponent },
-  { path: 'search', component: PageSearchComponent },
+  { path: 'search/:text', component: PageSearchComponent },
   { path: 'post/:id', component: PagePostComponent },
   { path: 'new-post', component: PageNewPostComponent },
   { path: '**', redirectTo: '' }
