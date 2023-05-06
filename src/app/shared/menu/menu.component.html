@@ -1,3 +1,3 @@
 <ul *ngIf="menuList" class="menu">
-  <li *ngFor="let menu of menuList" [routerLink]="['/search',menu.id]">{{menu.name}}</li>
+  <li *ngFor="let menu of menuList" routerLinkActive="active" [routerLink]="['/search',menu.id]">{{menu.name}}</li>
 </ul>
