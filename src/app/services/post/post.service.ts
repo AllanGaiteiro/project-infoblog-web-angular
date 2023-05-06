@@ -45,24 +45,29 @@ export class PostService {
       .valueChanges();
   }
 
-  create(post: Post): void {
+  async create(post: Post): Promise<void> {
     const id = this.firestore.createId();
-    this.firestore
-      .collection<Post>('posts')
-      .doc(id)
-      .set(Object.assign({}, post, { id }));
+    try {
+      await this.firestore
+        .collection<Post>('posts')
+        .doc(id)
+        .set(Object.assign({}, post, { id }));
+      console.log('created post')
+    } catch (error) {
+      console.error('error ocurred - created post - ', error);
+    }
+
   }
 
   update(post: Post): void {
-    this.firestore
-      .collection<Post>('posts')
-      .doc(post.id)
-      .set(post, { merge: true });
-  }
-
-  // remover depois de usar
-  createAll(): void {
-    const posts: Post[] = [];
-    posts.forEach((post) => this.create(post));
+    try {
+      this.firestore
+        .collection<Post>('posts')
+        .doc(post.id)
+        .set(post, { merge: true });
+      console.log('updated post')
+    } catch (error) {
+      console.error('error ocurred - updated post - ', error);
+    }
   }
 }
