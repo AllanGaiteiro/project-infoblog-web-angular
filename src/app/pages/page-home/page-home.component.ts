@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Section } from 'src/app/core/models/section.interface';
 import { SectionsService } from 'src/app/services/sections.service';
 
@@ -9,16 +10,17 @@ import { SectionsService } from 'src/app/services/sections.service';
 export class PageHomeComponent {
   sections?: Section[];
 
-  constructor(private sectionsService: SectionsService) {
+  constructor(private sectionsService: SectionsService, private route: ActivatedRoute) {
 
   }
-  ngOnInit() {
+  ngOnInit(): void {
     this.findSections();
   }
 
-  findSections() {
-    this.sectionsService.findAll().then(res => {
-      this.sections = res;
+  async findSections(): Promise<void> {
+    await this.sectionsService.findAll().then(res => {
+      const sections = res;
+      this.sections = sections;
     })
   }
 }

@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "infoblog-web"
+  },
+  "targets": {
+    "infoblog-web": {
+      "hosting": {
+        "project-infoblog-web-angular": [
+          "infoblog-web"
+        ]
+      }
+    }
   }
 }

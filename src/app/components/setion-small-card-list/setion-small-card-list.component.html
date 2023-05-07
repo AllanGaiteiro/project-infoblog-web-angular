@@ -1,15 +1,11 @@
-<section class="section-smal-card-list" *ngIf="section">
+<section class="section-smal-card-list" *ngIf="section && posts && posts.length > 0">
   <header class="title">
     <h2>{{section.name}}</h2>
     <a class="buton-more-post" [routerLink]="['/searh',section.id]">Visualizar mais</a>
   </header>
 
   <div class="content">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card *ngFor="let post of posts" [post]="post"></app-small-card>
   </div>
 
 </section>

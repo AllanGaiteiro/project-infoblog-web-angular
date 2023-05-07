@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from 'src/app/core/models/post.interface';
 
 @Component({
   selector: 'app-card-list',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-list.component.css']
 })
 export class CardListComponent {
+  @Input() posts?: Post[];
+
 
 }
