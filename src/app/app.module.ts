@@ -18,6 +18,7 @@ import { PageSearchComponent } from './pages/page-search/page-search.component';
 import { routes } from './routes';
 import { PostService } from './services/post/post.service';
 import { ButtonPostComponent } from './shared/button-post/button-post.component';
+import { ContentFormatPipe } from './shared/card/contentformat.pipe';
 import { MenuComponent } from './shared/menu/menu.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { SharedModule } from './shared/shared.module';
@@ -47,9 +48,10 @@ import { SharedModule } from './shared/shared.module';
   ],
   exports: [
     SharedModule,
-    RouterModule
+    RouterModule,
+    ContentFormatPipe
   ],
-  providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }, PostService],
+  providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }, PostService, ContentFormatPipe],
   schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })

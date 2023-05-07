@@ -4,15 +4,17 @@ import { RouterModule } from '@angular/router';
 import { BigCardComponent } from '../components/big-card/big-card.component';
 import { SmallCardComponent } from '../components/small-card/small-card.component';
 import { CardComponent } from './card/card.component';
+import { ContentFormatPipe } from './card/contentformat.pipe';
 import { LogoComponent } from './logo/logo.component';
 
 
 @NgModule({
-  declarations: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent],
+  declarations: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent, ContentFormatPipe],
+  exports: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent, ContentFormatPipe],
+  providers: [],
   imports: [
     CommonModule,
     RouterModule,
-  ],
-  exports: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent]
+  ]
 })
 export class SharedModule { }
