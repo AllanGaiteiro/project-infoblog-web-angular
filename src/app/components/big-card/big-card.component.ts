@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from 'src/app/core/models/post.interface';
 
 @Component({
   selector: 'app-big-card',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent {
+  @Input() post?: Post;
   id: string = 'id';
 }
