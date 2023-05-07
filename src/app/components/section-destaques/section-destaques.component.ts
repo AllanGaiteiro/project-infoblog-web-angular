@@ -11,6 +11,7 @@ import { PostService } from 'src/app/services/post/post.service';
 export class SectionDestaquesComponent {
   posts?: Post[];
   postsSubscription?: Subscription;
+  postDestaque?: Post;
   constructor(private service: PostService) {
 
   }
@@ -27,7 +28,9 @@ export class SectionDestaquesComponent {
 
   findPosts(): void {
     this.postsSubscription = this.service.findMoreViews(4).subscribe(data => {
-      this.posts = data;
+      this.postDestaque = data[0];
+      const posts = data.length > 1 ? data.slice(1, data.length) : data;
+      this.posts = posts;
     })
   }
 }

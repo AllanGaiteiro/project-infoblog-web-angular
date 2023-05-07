@@ -1,8 +1,8 @@
 <section class="section-destaque">
   <h2>Destaques</h2>
   <div class="content-destaque">
-    <app-big-card></app-big-card>
-    <app-card-list></app-card-list>
+    <app-big-card *ngIf="postDestaque" [post]="postDestaque"></app-big-card>
+    <app-card-list *ngIf="posts" [posts]="posts"></app-card-list>
   </div>
 
 </section>
