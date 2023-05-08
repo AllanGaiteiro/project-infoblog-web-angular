@@ -23,6 +23,7 @@ import { ContentFormatPipe } from './shared/card/contentformat.pipe';
 import { MenuComponent } from './shared/menu/menu.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { SharedModule } from './shared/shared.module';
+import { SearchInfoComponent } from './components/search-info/search-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { SharedModule } from './shared/shared.module';
     CardListComponent,
     PageHomeComponent,
     PageSearchComponent,
+    SearchInfoComponent,
   ],
   imports: [
     BrowserModule,
