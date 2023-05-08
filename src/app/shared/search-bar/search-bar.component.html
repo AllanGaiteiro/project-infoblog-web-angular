@@ -1,4 +1,5 @@
 <div class="search-bar">
   <img src="../../../assets/images/search-icon.png" alt="">
-  <p>search</p>
+  <input [(ngModel)]="text" type="search" class="search-input" placeholder="Search..." (keyup.enter)="goToSearchPage()">
+
 </div>
