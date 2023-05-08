@@ -4,6 +4,7 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { environment } from '../environments/environment';
@@ -39,6 +40,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     RouterModule,
+    FormsModule,
     SharedModule,
     RouterModule.forRoot(routes),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
