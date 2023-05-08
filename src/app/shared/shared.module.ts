@@ -6,11 +6,13 @@ import { SmallCardComponent } from '../components/small-card/small-card.componen
 import { CardComponent } from './card/card.component';
 import { ContentFormatPipe } from './card/contentformat.pipe';
 import { LogoComponent } from './logo/logo.component';
+import { SvgEmogiTristeComponent } from './svg-emogi-triste/svg-emogi-triste.component';
 
 
 @NgModule({
-  declarations: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent, ContentFormatPipe],
-  exports: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent, ContentFormatPipe],
+  declarations: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent, ContentFormatPipe, SvgEmogiTristeComponent],
+  exports: [CardComponent, LogoComponent, BigCardComponent, SmallCardComponent,
+    SvgEmogiTristeComponent, ContentFormatPipe],
   providers: [],
   imports: [
     CommonModule,

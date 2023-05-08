@@ -1,0 +1,11 @@
+<div class="seachInfo">
+  <h2 *ngIf="search">Search: {{search.toUpperCase().replace('-',' ')}}</h2>
+  <div class="noResults" *ngIf="search && !havePost">
+    <h3>Nenhum resultado
+      <app-svg-emogi-triste></app-svg-emogi-triste>
+    </h3>
+
+    <p>Não encontramos nenhuma postagem com a palavra-chave <strong>{{search}}</strong>. Tente outra palavra-chave.
+    </p>
+  </div>
+</div>

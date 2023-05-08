@@ -1,3 +1,4 @@
 <main>
+  <app-search-info [search]="text" [havePost]="!!posts?.length"></app-search-info>
   <app-setion-small-card-list *ngIf="posts" [posts]="posts"></app-setion-small-card-list>
 </main>
