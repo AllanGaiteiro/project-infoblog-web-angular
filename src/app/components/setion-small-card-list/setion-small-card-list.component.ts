@@ -11,7 +11,7 @@ import { PostService } from 'src/app/services/post/post.service';
 })
 export class SetionSmallCardListComponent {
   @Input() section?: Section;
-  posts?: Post[];
+  @Input() posts?: Post[];
   postsSubscription?: Subscription;
 
   constructor(private service: PostService) {
@@ -26,7 +26,7 @@ export class SetionSmallCardListComponent {
     }
   }
 
-  findPosts() {
+  findPosts(): void {
     if (this.section) {
       this.postsSubscription = this.service.findBySection(this.section.id, 5).subscribe(res => {
         this.posts = res;
