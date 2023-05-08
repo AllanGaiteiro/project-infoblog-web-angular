@@ -1,7 +1,7 @@
-<section class="section-smal-card-list" *ngIf="section && posts && posts.length > 0">
-  <header class="title">
+<section class="section-smal-card-list" *ngIf="posts && posts.length > 0">
+  <header *ngIf="section" class="title">
     <h2>{{section.name}}</h2>
-    <a class="buton-more-post" [routerLink]="['/searh',section.id]">Visualizar mais</a>
+    <a class="buton-more-post" [routerLink]="['/search',section.id]">Visualizar mais</a>
   </header>
 
   <div class="content">

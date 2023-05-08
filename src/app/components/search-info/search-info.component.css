@@ -1,0 +1,21 @@
+.seachInfo {
+  font-family: "Patrick Hand";
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 40px;
+  margin-bottom: 80px;
+}
+.noResults h3 {
+  font-size: 64px;
+  font-weight: 400;
+}
+.noResults p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.emoji {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
-  text?: string;
+  text: string = '';
   constructor(private router: Router) { }
 
   goToSearchPage() {

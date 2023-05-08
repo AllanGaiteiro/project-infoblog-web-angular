@@ -4,6 +4,7 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { environment } from '../environments/environment';
@@ -22,6 +23,7 @@ import { ContentFormatPipe } from './shared/card/contentformat.pipe';
 import { MenuComponent } from './shared/menu/menu.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { SharedModule } from './shared/shared.module';
+import { SearchInfoComponent } from './components/search-info/search-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +37,12 @@ import { SharedModule } from './shared/shared.module';
     CardListComponent,
     PageHomeComponent,
     PageSearchComponent,
+    SearchInfoComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    FormsModule,
     SharedModule,
     RouterModule.forRoot(routes),
     provideFirebaseApp(() => initializeApp(environment.firebase)),

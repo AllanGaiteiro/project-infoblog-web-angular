@@ -11,12 +11,20 @@
   width: 10px;
   margin: 15px;
 }
-.search-bar p {
-  font-family: "Patrick" Hand;
+.search-bar input {
+  background: #c4c4c4;
+  height: 40px;
+  max-width: 160px;
+  font-family: "Patrick Hand";
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0em;
   text-align: left;
   color: #111111;
-  margin: 10px;
+  border: none;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
